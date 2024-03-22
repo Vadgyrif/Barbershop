@@ -1,3 +1,3 @@
-Me new project Barbershop
+My new project Barbershop
 
 vadgyrif
