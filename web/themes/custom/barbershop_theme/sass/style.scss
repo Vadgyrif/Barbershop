@@ -1,0 +1,578 @@
+/* 
+Theme Name: Bootstrap 4 Sass
+Description: Bootstrap 4 with Sass
+*/
+
+// import files
+@import "import";
+
+/* GENERAL STYLES
+-------------------------------------------------*/
+
+body {
+    background: $white;
+}
+
+
+/* COLORS 
+--------------------------------------------------*/
+
+a {
+    color: $accent-shade;
+}
+
+.bg-inverse {
+    background: $primary-shade !important;
+}
+
+.site-footer {
+    background: $accent-shade !important;
+}
+
+.menu--main li a {
+    color: $primary-shade;
+}
+
+.menu--account li a {
+    color: $primary-shade;
+}
+
+.site-name-slogan a {
+    text-decoration: none;
+}
+
+.card-group img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.card-group .field--type-image {
+    margin: 0
+}
+
+.slick {
+    width: 100%;
+}
+
+.slick>div {
+    margin: 0 15px;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+
+body{
+    font-family: "Catamaran", sans-serif;
+    overflow-x: hidden;
+
+}
+
+.bg-primary{
+    background-color: #fff;
+}
+
+#navbar-main{
+
+    .navbar-brand{
+
+        display: flex;
+        align-items: flex-end;    
+        font-size: 40px;
+        color: #99BAED;
+        font-weight: 600;
+
+
+        img{
+            width: 74px;
+            height: 74px;
+
+        }
+    }
+
+    #block-barbershop-theme-main-menu{
+
+        padding-top: 20px;
+
+        .nav-item{
+            .nav-link{
+                color: #163561;
+                font-size: 25px;
+                line-height: 33px;
+                font-weight: 500;
+            }
+        }
+
+        .nav-item.active{
+            position: relative;
+            display: block;
+            background-color: #99BAED;
+            z-index: 2;
+            border-radius: 5px;
+
+            .nav-link{
+                color: #fff;
+                font-size: 25px;
+                line-height: 33px;
+            }
+        }
+        .nav-item.active::before{
+            content: '';
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: -40px;
+            background-color: #99BAED;
+            z-index: 1;
+
+        }
+    }
+}
+
+
+
+#block-barbershop-theme-mainblock,
+#block-barbershop-theme-ourhistory,
+#block-barbershop-theme-ourhistorypage,
+#block-barbershop-theme-morehistory{
+
+    margin-bottom: 150px;
+
+    .content{
+        display: flex;
+
+        .field--type-text-with-summary{
+
+            width: 39%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+            h2{
+                font-size: 65px;
+                line-height: 80px;
+                color:  #163561;
+                font-weight: 700;
+
+                .green{
+                    color: #FBB400 ;
+                }
+            }
+
+            p{
+                font-size: 25px;
+                line-height: 37px;
+                letter-spacing: 3%;
+                opacity: 65%;
+                color:  #163561;
+            }
+
+        }
+
+        .field--name-field-image{
+            width: 60%;
+            //overflow-x: hidden;
+        }
+
+        #first-btn, .button{
+            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease-in 0s;
+            width: 188px;
+            height: 75px;
+            border: 1px #99BAED solid;
+            border-radius: 20px;
+            background-color: #99BAED;
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            box-shadow: 0px 5px 15px #99BAED;
+        }
+        #first-btn:hover, .button:hover{
+            background-color: #163561;
+        }
+
+
+    }
+}
+
+#block-barbershop-theme-ourhistory,
+#block-barbershop-theme-ourhistorypage{
+
+
+    .content{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        
+
+        .field--name-field-image{
+            width: 55%;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            
+        }
+    }
+}
+
+#block-barbershop-theme-servicesweprovidetitle,
+#block-barbershop-theme-ourgallerytitle{
+
+    margin-bottom: 50px;
+
+    h2{
+        text-align: center;
+        margin: 0 auto;
+        font-size: 65px;
+        line-height: 80px;
+        color:  #163561;
+        font-weight: 700;
+
+        .green{
+            color: #FBB400 ;
+        }
+    }
+}
+
+#views-bootstrap-servises-block-1{
+
+    margin-bottom: 100px;
+
+    .row{
+        justify-content: space-between;
+    }
+}
+
+
+
+.servise-item{
+        display: block;
+        transition: all 0.4s ease-in 0s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 31%;
+       // width: 400px;
+        height: 533px;
+        background-color: #FAFBFF;
+        border-radius: 29px;
+        box-shadow: 0 5px 5px #99BAED;
+        padding-top: 50px;
+    
+    
+
+        .field--type-text-with-summary{
+            padding-top: 50px;
+            text-align: center;
+
+            h4{
+                font-size: 45px;
+                line-height: 52px;
+                color: #163561;
+                letter-spacing: 3%;
+                font-weight: 700;
+
+            }
+
+            p{
+                max-width: 359px;
+                font-size: 22px;
+                line-height: 35px;
+                letter-spacing: 3%;
+                color: #163561;
+            }
+        }
+
+        .field--name-field-image{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 103px;
+            height: 126px;
+            border-radius: 13px;
+            background-color: #E5ECFE;
+            box-shadow: 0 1px 1px #008FDD;
+
+            img{
+                width: 65px;
+                height: 70px;
+            }
+
+        }
+    
+}
+
+
+
+.servise-item:hover{
+
+        background-color: #99BAED;
+
+    
+        .field--type-text-with-summary{
+            h4{
+                color: #fff;
+            }
+
+            p{
+                color: #fff;
+                opacity: 65%;
+            }
+        }
+
+}
+
+
+#views-bootstrap-gallery1-block-1{
+
+    margin-bottom: 50px;
+
+    .row{
+        justify-content: center;
+
+
+    
+        .gallery-item{
+            max-width: 400px;
+            margin-bottom: 25px;
+
+            .views-field-field-image{
+
+                .field-content{
+                    background-color: #5296FF;
+
+                    img{
+                        transition: all 0.4s ease-in 0s;
+                        opacity: 80%;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .gallery-item:hover{
+            .views-field-field-image{
+                .field-content{
+                    img{
+                        opacity: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#block-barbershop-theme-morephoto{
+
+    .button{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        transition: all 0.4s ease-in 0s;
+        width: 188px;
+        height: 75px;
+        border: 1px #99BAED solid;
+        border-radius: 20px;
+        background-color: #99BAED;
+        color: #fff;
+        font-size: 20px;
+        line-height: 30px;
+        box-shadow: 0px 5px 15px #99BAED;
+    }
+    .button:hover{
+        background-color: #163561;
+    }
+
+}
+
+
+#block-barbershop-theme-footer{
+    .content{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+        .field--name-field-image{
+            margin-bottom: 30px;
+        }
+
+        p{
+            font-size: 24px;
+            color:  #153461;
+            opacity: 65%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 100%;  
+
+    }
+
+
+    #block-barbershop-theme-mainblock,
+    #block-barbershop-theme-ourhistory{
+
+        margin-bottom: 100px;
+
+        .content{
+            display: flex;
+            flex-direction: column-reverse;
+
+            .field--type-text-with-summary{
+
+                width: 100%;
+            }
+
+            .field--name-field-image{
+                width: 100%;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+        }
+    }
+
+    .servise-item{
+        width: 31%;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 100%;
+    }
+
+
+    .row{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    .servise-item{
+        display: block;
+        transition: all 0.4s ease-in 0s;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        width: 100%;
+        max-height: 300px;
+        margin-bottom: 15px;
+    
+
+        .field--type-text-with-summary{
+            padding-top: 50px;
+            text-align: center;
+
+            h4{
+                font-size: 45px;
+                line-height: 10px;
+
+            }
+        }
+
+        .field--name-field-image{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            max-width: 103px;
+            max-height: 126px;
+            border-radius: 13px;
+            background-color: #E5ECFE;
+            box-shadow: 0 1px 1px #008FDD;
+
+            img{
+                width: 65px;
+                height: 70px;
+            }
+
+        }
+    
+}
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    h2{
+        font-size: 45px;
+        line-height: 60px;
+        color:  #163561;
+        font-weight: 700;
+
+        .green{
+            color: #FBB400 ;
+        }
+    }
+    
+}
